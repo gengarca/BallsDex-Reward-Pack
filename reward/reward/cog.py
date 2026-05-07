@@ -217,8 +217,8 @@ class RewardCog(commands.Cog, name="RewardCog"):
         instance = await BallInstance.objects.acreate(
             player=player,
             ball=ball,
-            attack_bonus=random.randint(-20, 20),
-            health_bonus=random.randint(-20, 20),
+            attack_bonus=random.randint(0, 0),
+            health_bonus=random.randint(0, 0),
         )
 
         if claim:
